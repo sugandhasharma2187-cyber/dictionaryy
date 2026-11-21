@@ -40,4 +40,16 @@ d3={}
 for i in (d1,d2):
     d3.update(i)
 
-print(f"d3= {d3}\n")
+print(d3)
+
+# count the occurrence of each vowel in the string entered by user
+user_input= input("Enter the string - ")
+vowels = {
+"a":0,"e":0,"i":0,"o":0,"u":0,"A":0,"E":0,"I":0,"O":0,"U":0
+}
+
+for C in user_input:
+    if C in vowels:
+        vowels[C] += 1
+
+print(vowels)
