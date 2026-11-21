@@ -22,3 +22,22 @@ print(classroom["student3"])
 #change marks of student 2
 classroom["student2"]["marks"][2]=90
 print(classroom["student2"])
+
+""" write a program. that merge two dictionary's 
+"""
+
+d1={"playing":"badminton",
+    "homework":"math"}
+
+print(d1,"\n")
+
+d2={"hobby":"drawing",
+    "activities":"muisic"}
+
+print(d2,"\n")
+
+d3={}
+for i in (d1,d2):
+    d3.update(i)
+
+print(f"d3= {d3}\n")
